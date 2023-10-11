@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Accounts</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <h1>View Accounts</h1>
+    <ul>
+        {% for account in accounts %}
+            <li>{{ account.account_number }} - {{ account.account_holder }} - ₹{{ account.balance }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
